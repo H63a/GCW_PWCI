@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0;
+	padding:0;
+    background-color: #44426e;
+
+    
+}
+
+.nav-item:hover{
+
+background-color: #292643;
+}
+
+
+.Video-curso{
+    align-content: center;
+    background-color:#292643;
+    padding: 2% ;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.texto-pagina-cursos{
+    color: #E99E75;
+    text-align: center;
+}

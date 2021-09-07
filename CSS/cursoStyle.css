@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0;
+	padding:0;
+    background-color: #44426e;
+
+    
+}
+
+.nav-item:hover{
+
+background-color: #292643;
+}
+
+.texto-pagina-cursos{
+    color: #E99E75;
+    text-align: center;
+}
+
+
+.content{
+    align-content: center;
+}
+
+.container{
+	width:500px;
+	height:500px;
+	background:#A4A4A4;
+	position:relative;
+	overflow:hidden;
+	transition: all .5s ease-in;
+float:inherit;
+    margin-right: 10%;
+    margin-top:100px;
+
+   
+    
+    
+}
+
+
+
+
+.arriba{
+	width:300px;
+	height:50px;
+	background:rgba(78,44,91,.5);
+	position:absolute;
+	top:-50px;
+	transition: all .5s ease-in;
+}
+
+
+.abajo{
+	width:300px;
+	height:50px;
+	background:rgba(78,44,91,.5);
+	position:absolute;
+	top:300px;
+	transition: all .5s ease-in;
+}
+
+.derecha{
+	width:100px;
+	height:300px;
+	background:rgba(78,44,91,.5);
+	position:absolute;
+	top:0px;
+	right:-100px;
+	transition: all .5s ease-in;
+
+}
+
+
+.container:hover .arriba{
+	transform:translateY(50px);
+	background:rgba(78,44,91,.5);
+	
+}
+
+.container:hover .abajo{
+	transform:translateY(-50px);
+	background:rgba(78,44,91,.5);
+	
+}
+
+.container:hover .derecha{
+	transform:translateX(-100px);
+	background:rgba(78,44,91,.5);
+	
+}
+
+.container:hover{
+	background:#292643;
+	
+}
+
+.descripcion{
+    color:#A4A4A4
+}
