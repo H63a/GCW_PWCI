@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0;
+	padding:0;
+    background-color: #44426e;
+
+    
+}
+
+.nav-item:hover{
+
+background-color: #292643;
+}
+
+.informacion-usuario{
+    align-content: center;
+    background-color:#A4A4A4;
+}
+.informacion-usuario2{
+    align-content: center;
+    background-color:#292643;
+    padding: 2% ;
+    margin-left: 15%;
+}
