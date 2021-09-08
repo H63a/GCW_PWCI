@@ -63,13 +63,13 @@
                 <div class="card-body">
                   <h5 class="card-title">Usuario</h5>
                   <p class="card-text">Nombre</p>
-                  <input type="text" class="form-control" id="ingresaApodo" placeholder="Nombre de usuario">
+                  <input type="text" class="form-control" id="ingresaApodo">
                   <p class="card-text">Genero</p>
-                  <input type="text" class="form-control" id="ingresaGenero" placeholder="Genero">
+                  <input type="text" class="form-control" id="ingresaGenero" >
                   <p class="card-text">Correo</p>
-                  <input type="text" class="form-control" id="ingresaCorreo" placeholder="Correo">
+                  <input type="text" class="form-control" id="ingresaCorreo" >
                   <p class="card-text">Contraseña</p>
-                  <input type="text" class="form-control" id="ingresaContraseña" placeholder="Contraseña">
+                  <input type="text" class="form-control" id="ingresaContrasena" >
                   <p class="card-text"><small class="text-muted">Fecha de alta</small></p>
                   <input class="btn btn-primary" onclick=validarForm(); type="submit" value="Modificar">
                   <input class="btn btn-primary"onclick=validarForm(); type="submit" value="Eliminar">
@@ -81,7 +81,19 @@
        
             
     
-
+      <script>
+        function validarForm(){
+        var nombre = document.getElementById("ingresaApodo");
+        var genero = document.getElementById("ingresaGenero");
+        var correo = document.getElementById("ingresaCorreo");
+        var contrasena = document.getElementById("ingresaContrasena");
+       
+        if (nombre == null || genero == null || correo == null || contrasena == null )
+        alert("Favor de llenar todos los campos");
+        else
+        alert("Se han ingresado los datos correctamente")
+    }
+    </script>
   
 
 
