@@ -1,0 +1,82 @@
+body
+{
+	background-color: #BBAAB8;
+}
+
+.navbar
+{
+	background-color: #292643;
+}
+
+footer
+{
+	background-color: #44426E;
+}
+	
+h1
+{
+	color: #776483;
+	text-align: center;
+}
+
+h3
+{
+	text-align: center;
+}
+
+.todo
+{
+	margin: 1rem;
+	padding: 1rem;
+	text-align: center;
+}
+
+.mb-3
+{
+	max-width: 1400px;
+}
+
+
+#form 
+{
+  width: 250px;
+  margin: 0 auto;
+  height: 50px;
+}
+
+#form p 
+{
+  text-align: center;
+}
+
+#form label 
+{
+  font-size: 20px;
+}
+
+input[type="radio"] 
+{
+  display: none;
+}
+
+label 
+{
+  color: #776483;
+}
+
+.clasificacion 
+{
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+label:hover,
+label:hover ~ label 
+{
+  color: #e99e75;
+}
+
+input[type="radio"]:checked ~ label 
+{
+  color: #e99e75;
+}
