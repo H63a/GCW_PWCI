@@ -8,6 +8,12 @@ body
 	background-color: #292643;
 }
 
+.nav-item:hover{
+
+	background-color: #292643;
+	}
+	
+
 footer
 {
 	background-color: #44426E;
