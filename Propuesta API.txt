@@ -1,0 +1,3 @@
+Porpuesta API
+
+Vamos a incorporar el servicio de Paypal para que los usuarios puedan realiar el pago de sus cursos por medio de este.
