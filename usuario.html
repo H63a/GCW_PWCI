@@ -71,16 +71,16 @@
                 <div class="card-body">
                   <h5 class="card-title">Usuario</h5>
                   <p class="card-text">Nombre</p>
-                  <input type="text" class="form-control" id="ingresaApodo">
+                  <input type="text" class="form-control" id="ingresaApodo" value="">
                   <p class="card-text">Genero</p>
-                  <input type="text" class="form-control" id="ingresaGenero" >
+                  <input type="text" class="form-control" id="ingresaGenero"value="">
                   <p class="card-text">Correo</p>
-                  <input type="text" class="form-control" id="ingresaCorreo" >
+                  <input type="text" class="form-control" id="ingresaCorreo" value="">
                   <p class="card-text">Contraseña</p>
-                  <input type="text" class="form-control" id="ingresaContrasena" >
+                  <input type="text" class="form-control" id="ingresaContrasena"required/>
                   <p class="card-text"><small class="text-muted">Fecha de alta</small></p>
-                  <input class="btn btn-primary" onclick=validarForm(); type="submit" value="Modificar">
-                  <input class="btn btn-primary"onclick=validarForm(); type="submit" value="Eliminar">
+                  <button class="btn btn-primary" onclick="validarForm()"  > Modificar</button>
+                  <button class="btn btn-primary" onclick="validarForm()" >Eliminar</button>
 
                   <a class="btn btn-primary" href="historial.html">Mis cursos</a>
                 </div>
@@ -93,12 +93,12 @@
     
       <script>
         function validarForm(){
-        var nombre = document.getElementById("ingresaApodo");
-        var genero = document.getElementById("ingresaGenero");
-        var correo = document.getElementById("ingresaCorreo");
-        var contrasena = document.getElementById("ingresaContrasena");
+        var nombre = document.getElementById("ingresaApodo").value;
+        var genero = document.getElementById("ingresaGenero").value;
+        var correo = document.getElementById("ingresaCorreo").value;
+        var contrasena = document.getElementById("ingresaContrasena").value;
        
-        if (nombre == null || genero == null || correo == null || contrasena == null )
+        if (nombre == "" || genero == "" || correo == "" || contrasena == "" )
         alert("Favor de llenar todos los campos");
         else
         alert("Se han ingresado los datos correctamente")
