@@ -1,0 +1,42 @@
+body
+{
+	background-color: #BBAAB8;
+}
+
+.navbar
+{
+	background-color: #292643;
+}
+
+footer
+{
+	background-color: #44426E;
+}
+	
+h1
+{
+	color: #776483;
+	text-align: center;
+}
+
+h3
+{
+	text-align: center;
+}
+
+.todo
+{
+	margin: 1rem;
+	padding: 1rem;
+	text-align: center;
+}
+
+.collapsed
+{
+	background-color: #776483;
+}
+
+.accordion-item
+{
+	background-color: #BBAAB8;
+}
