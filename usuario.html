@@ -11,7 +11,7 @@
  <link rel="stylesheet" href="css/bootstrap.min.css">                                                <!-- Bootstrap style -->
  <link rel="stylesheet" href="css/flexslider.css">                                                   <!-- Flexslider style -->       
  <link rel="stylesheet" href="css/templatemo-style.css">                                             <!-- Templatemo style -->
-
+ <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 
 <body>
@@ -46,7 +46,7 @@
       </ul>
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+        <button class="btn my-2 my-sm-0" type="submit">Buscar</button>
       </form>
     </div>
   </nav>
@@ -71,8 +71,8 @@
                   <p class="card-text">Contraseña</p>
                   <input type="text" class="form-control" id="ingresaContraseña" placeholder="Contraseña">
                   <p class="card-text"><small class="text-muted">Fecha de alta</small></p>
-                  <input class="btn btn-primary" type="submit" value="Modificar">
-                  <input class="btn btn-primary" type="submit" value="Eliminar">
+                  <input class="btn btn-primary" onclick=validarForm(); type="submit" value="Modificar">
+                  <input class="btn btn-primary"onclick=validarForm(); type="submit" value="Eliminar">
                 </div>
               </div>
             </div>
