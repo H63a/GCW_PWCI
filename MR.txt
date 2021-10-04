@@ -1,0 +1,32 @@
+Base de Datos Multimedia 
+Grupo 03
+1725396 Yadira Elizabeth Ayala Gutierez
+1633746 Ernesto Montemayor Martinez
+
+USUARIO:id(PK), nombre, apellido, genero, fecha de nacimineto, foto, email, contraseña, decha de registro, 
+	tipo bool(Estudiante o escuela FK)
+
+
+CURSO:id (PK), niveles(FK), costo, desripción, imagen, comentarios, calificación, categoria(FK), 
+	titulo, diploma(FK), terminado, progreso, formaPago
+
+NIVEL: id(PK), titulo, video, texto, imagen
+
+DIPLOMA: id(PK), curso(FK), nombreAlumno(FK), fechaTerminado, nombreEscuela(FK)
+
+CATEGORIA: id(PK), nombre, descripción, usuario(FK), fecha
+
+categoriaCurso
+
+MENSAJE: id(PK), Estidiante(FK), Escuela(FK), fecha, hora
+
+
+HISTORIAL: id(PK), estudiante(FK), curso(FK), progreso(FK), fechaInscripcion, uFechaIngreso, fechaTermino
+
+COMENTARIO: id(PK), estudiante(FK), calificación, curso(FK), texto
+
+VENTA:id(PK), alumno, curso
+
+cantidadAlumnos, nivelPromedio, ingresosCurso, totalIngreso, alumnoNom(FK), 
+	fechaInscripcion, nivelAvance, pago, formaPago 
+
