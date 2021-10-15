@@ -1,0 +1,655 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Data</title>
+</head>
+<body>
+<table border=1>
+<tr>
+<td bgcolor=silver class='medium'>COLUMN_NAME</td>
+<td bgcolor=silver class='medium'>COLUMN_TYPE</td>
+<td bgcolor=silver class='medium'>COLUMN_DEFAULT</td>
+<td bgcolor=silver class='medium'>COLUMN_KEY</td>
+<td bgcolor=silver class='medium'>IS_NULLABLE</td>
+<td bgcolor=silver class='medium'>COLUMN_COMMENT</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>alumno</td>
+<td class='normal' valign='top'>int</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'>MUL</td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Alumno al que se le otorgara el diploma</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>apellido</td>
+<td class='normal' valign='top'>varchar(30)</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Apellido paterno del usuario</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>calificacion</td>
+<td class='normal' valign='top'>int</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Calificacion otorgado por usuarios que ya terminaron el curso</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>calificación</td>
+<td class='normal' valign='top'>int</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>calificación que el estudiante le otorga al curso</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>cantidad_alumnos</td>
+<td class='normal' valign='top'>int</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Cantidad de alumnos inscritos al curso</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>categoria</td>
+<td class='normal' valign='top'>int</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'>MUL</td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Categoria para el curso</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>categorias</td>
+<td class='normal' valign='top'>int</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>categorias a las que pertence este curso</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>comentarios</td>
+<td class='normal' valign='top'>int</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Comentarios hechos por usuarios que ya terminaron el curso</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>contraseña</td>
+<td class='normal' valign='top'>int</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Contraseña para la cuenta del usuario</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>costo</td>
+<td class='normal' valign='top'>float</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Costo por el curso completo</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>curso</td>
+<td class='normal' valign='top'>int</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'>MUL</td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Curso al que se le otorgara categorias</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>curso</td>
+<td class='normal' valign='top'>int</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'>MUL</td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Curso por el que se otorga este diploma</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>curso</td>
+<td class='normal' valign='top'>int</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'>MUL</td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Curso al que pertenece este nivel</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>curso</td>
+<td class='normal' valign='top'>int</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'>MUL</td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Curso deseado por el estudiante</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>curso</td>
+<td class='normal' valign='top'>int</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Cursos del estudiante</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>curso</td>
+<td class='normal' valign='top'>int</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'>MUL</td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Curso al que se le da el comentario</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>curso</td>
+<td class='normal' valign='top'>int</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'>MUL</td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Curso a comprar</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>descripcion</td>
+<td class='normal' valign='top'>varchar(50)</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Pequeña descripción sobre la categoria</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>descripcion</td>
+<td class='normal' valign='top'>varchar(50)</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Pequeño texto que describa el contenido del curso</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>diploma</td>
+<td class='normal' valign='top'>int</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>FK Diplima que se otorga si se termina un curso</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>email</td>
+<td class='normal' valign='top'>varchar(30)</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'>UNI</td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Dirección de correo electronico del usuario</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>escuela</td>
+<td class='normal' valign='top'>int</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'>MUL</td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Escuela en la conversacion</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>escuela</td>
+<td class='normal' valign='top'>int</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'>MUL</td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Dueño del curso</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>estudiante</td>
+<td class='normal' valign='top'>int</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'>MUL</td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Estudiante que realizo el comentario</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>estudiante</td>
+<td class='normal' valign='top'>int</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'>MUL</td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Alumno que tiene el curso</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>estudiante</td>
+<td class='normal' valign='top'>int</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'>MUL</td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Estudiante que tiene el curso</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>estudiante</td>
+<td class='normal' valign='top'>int</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'>MUL</td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Estudiante al que pertenece el historial</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>estudiante</td>
+<td class='normal' valign='top'>int</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'>MUL</td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Estudiante en la conversacion</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>fecha</td>
+<td class='normal' valign='top'>date</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>fecha del mensaje</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>fecha</td>
+<td class='normal' valign='top'>date</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Fecha en la que se creo la categoria</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>fecha_inscripcion</td>
+<td class='normal' valign='top'>date</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'></td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>fecha_nac</td>
+<td class='normal' valign='top'>date</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>fecha de nacimiento del usuario</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>fecha_registro</td>
+<td class='normal' valign='top'>date</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Fecha en la que se registro el usuario</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>fecha_terminado</td>
+<td class='normal' valign='top'>date</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Fecha en la que se termino el curso</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>fecha_Termino</td>
+<td class='normal' valign='top'>date</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'></td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>forma_pago</td>
+<td class='normal' valign='top'>enum('OXXO','PayPal')</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>froma deseada de pago</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>foto</td>
+<td class='normal' valign='top'>mediumblob</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Imagen de perfil del usuario</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>genero</td>
+<td class='normal' valign='top'>enum('MASCULINO','FEMENINO')</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Seleccion de genero del usuario</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>hora</td>
+<td class='normal' valign='top'>time</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>hora del mensaje</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>id_ca</td>
+<td class='normal' valign='top'>int</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'>PRI</td>
+<td class='normal' valign='top'>NO</td>
+<td class='normal' valign='top'>Identificador por usuario obteniendo un curso</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>id_categoria</td>
+<td class='normal' valign='top'>int</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'>PRI</td>
+<td class='normal' valign='top'>NO</td>
+<td class='normal' valign='top'>Identificador de la categoria</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>id_cc</td>
+<td class='normal' valign='top'>int</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'>PRI</td>
+<td class='normal' valign='top'>NO</td>
+<td class='normal' valign='top'>Identificador de otorgacion de categoria</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>id_comentario</td>
+<td class='normal' valign='top'>int</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'>PRI</td>
+<td class='normal' valign='top'>NO</td>
+<td class='normal' valign='top'>Identificador para el mensaje</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>id_curso</td>
+<td class='normal' valign='top'>int</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'>PRI</td>
+<td class='normal' valign='top'>NO</td>
+<td class='normal' valign='top'>Identificaro unico para cada curso</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>id_diploma</td>
+<td class='normal' valign='top'>int</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'>PRI</td>
+<td class='normal' valign='top'>NO</td>
+<td class='normal' valign='top'>Identificador el diploma</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>id_historial</td>
+<td class='normal' valign='top'>int</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'>PRI</td>
+<td class='normal' valign='top'>NO</td>
+<td class='normal' valign='top'>Identificador para el mensaje</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>id_mensaje</td>
+<td class='normal' valign='top'>int</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'>PRI</td>
+<td class='normal' valign='top'>NO</td>
+<td class='normal' valign='top'>Identificador para el mensaje</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>id_nivel</td>
+<td class='normal' valign='top'>int</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'>PRI</td>
+<td class='normal' valign='top'>NO</td>
+<td class='normal' valign='top'>Identificador para cada nivel de cada curso</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>id_user</td>
+<td class='normal' valign='top'>int</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'>PRI</td>
+<td class='normal' valign='top'>NO</td>
+<td class='normal' valign='top'>Identificaro unico para cada usuario</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>id_venta</td>
+<td class='normal' valign='top'>int</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'>PRI</td>
+<td class='normal' valign='top'>NO</td>
+<td class='normal' valign='top'>Identificador de la venta</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>imagen</td>
+<td class='normal' valign='top'>mediumblob</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Imagen representativa del contenido del nivel</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>imagen</td>
+<td class='normal' valign='top'>mediumblob</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Imagen que presentara al curso</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>ingresos_curso</td>
+<td class='normal' valign='top'>int</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Ganancias por un curso en especifico</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>nivel_avance</td>
+<td class='normal' valign='top'>tinyint</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'></td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>nivel_promedio</td>
+<td class='normal' valign='top'>float</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Nivel promedio que han cursado los alumnos</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>niveles</td>
+<td class='normal' valign='top'>int</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>creo que FK, tendriamos que hacer otra tabla para curso_niveles</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>nombre</td>
+<td class='normal' valign='top'>varchar(20)</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Nombre para la categoria</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>nombre</td>
+<td class='normal' valign='top'>varchar(20)</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Primer nombre del usuario</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>nombre_Escuela</td>
+<td class='normal' valign='top'>varchar(20)</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Nombre de la escuela</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>pago</td>
+<td class='normal' valign='top'>int</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'></td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>progreso</td>
+<td class='normal' valign='top'>tinyint</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Progreso del usuario en el cuerso</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>terminado</td>
+<td class='normal' valign='top'>mediumblob</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Curso terminado(true) o impcompleto(false)</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>texto</td>
+<td class='normal' valign='top'>varchar(150)</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Contenido informativo del curso</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>texto</td>
+<td class='normal' valign='top'>varchar(100)</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Opinion del usuario sobre el curso</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>tipo_usuario</td>
+<td class='normal' valign='top'>mediumblob</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Tipo de usuario, estudiante o escuela</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>titulo</td>
+<td class='normal' valign='top'>varchar(30)</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Titulo de este nivel del curso</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>titulo</td>
+<td class='normal' valign='top'>varchar(30)</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Titulo que representa el contenido del curso</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>total_ingreso</td>
+<td class='normal' valign='top'>int</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Ganancias por todos los cursos</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>u_fecha_Ingreso</td>
+<td class='normal' valign='top'>date</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>fecha de ingreso del usuario</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>usuario</td>
+<td class='normal' valign='top'>int</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'>MUL</td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Usuario que creo la categoria</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>video</td>
+<td class='normal' valign='top'>mediumblob</td>
+<td class='normal' valign='top'>NULL</td>
+<td class='normal' valign='top'></td>
+<td class='normal' valign='top'>YES</td>
+<td class='normal' valign='top'>Video con información del nivel</td>
+</tr>
+</table>
+</body></html>

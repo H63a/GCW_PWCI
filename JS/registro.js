@@ -6,6 +6,8 @@ $("#contra").keyup(function(){
     var regx_pass = /\S+[0-9]/;
     var pass_input = $(this).val();
     if (regx_pass.test(pass_input)){
+
+      
         if($(this).val().lenght >= 8 && $(this).val().lenght <=50){
             $("#pass_status").text("Valido");
             $("#pass_status").removeClass("text-danger");
