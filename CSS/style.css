@@ -8,6 +8,12 @@ body{
     
 }
 
+h1
+{
+    color: white;
+    text-align: center;
+}
+
 .nav-item:hover{
 
 background-color: #292643;
@@ -21,4 +27,13 @@ background-color: #292643;
 .btn 
 {
     background-color: #e99e75;
+}
+
+.contenido
+{
+    align-content: center;
+    background-color:#292643;
+    padding: 2% ;
+    margin-left: 15%;
+    margin-right: 15%;
 }

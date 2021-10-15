@@ -18,3 +18,12 @@ footer
 {
 	background-color: #44426E;
 }
+
+.contenido
+{
+    align-content: center;
+    background-color:#292643;
+    padding: 2% ;
+    margin-left: 15%;
+    margin-right: 15%;
+}
