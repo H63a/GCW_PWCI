@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+<<<<<<< Updated upstream
   <meta charset="utf-8">
   <title>Usuario</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity=" sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -12,6 +13,27 @@
    <link rel="stylesheet" href="css/flexslider.css">                                                   <!-- Flexslider style -->       
    <link rel="stylesheet" href="css/templatemo-style.css">                                             <!-- Templatemo style -->
    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+   <script type="text/javascript" src="/JS/registro.js"></script>
+=======
+<meta charset="utf-8">
+<title>Usuario</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="CSS/usuarioStyle.css">
+
+ <!-- load stylesheets -->
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400">  <!-- Google web font "Open Sans" -->
+ <link rel="stylesheet" href="css/bootstrap.min.css">                                                <!-- Bootstrap style -->
+ <link rel="stylesheet" href="css/flexslider.css">                                                   <!-- Flexslider style -->       
+ <link rel="stylesheet" href="css/templatemo-style.css">                                             <!-- Templatemo style -->
+ <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+ <script type="text/javascript" src="/JS/registro.js"></script>
+
+
+
+
+
+
+>>>>>>> Stashed changes
 </head>
 
 <body>
@@ -77,10 +99,13 @@
                   <p class="card-text">Correo</p>
                   <input type="text" class="form-control" id="ingresaCorreo" name = "ingresaCorreo" value="">
                   <p class="card-text">Contraseña</p>
-                  <input type="text" class="form-control" id="ingresaContrasena" name = "ingresaContrasena" required/>
+                  <input type="password" class="form-control" id="contra" name = "contra" />
+                  <br>
+                  <span class="text-success" id="pass_status"></span>
+                  <br>
                   <p class="card-text"><small class="text-muted">Fecha de alta</small></p>
                   <button class="btn btn-primary" onclick="validarForm()"  > Modificar</button>
-                  <button class="btn btn-primary" onclick="validarForm()" >Eliminar</button>
+                  <button class="btn btn-primary" onclick="validarContra()" >Eliminar</button>
 
                   <a class="btn btn-primary" href="historial.html">Mis cursos</a>
                 </div>
@@ -96,15 +121,42 @@
         var nombre = document.getElementById("ingresaApodo").value;
         var genero = document.getElementById("ingresaGenero").value;
         var correo = document.getElementById("ingresaCorreo").value;
-        var contrasena = document.getElementById("ingresaContrasena").value;
+        var contrasena = document.getElementById("contra").value;
        
         if (nombre == "" || genero == "" || correo == "" || contrasena == "" )
-        alert("Favor de llenar todos los campos");
+        alert("Favor de llenar todos los campos")
         else
         alert("Se han ingresado los datos correctamente")
+        
+        
+
+
     }
     </script>
+
+<script>
+  function validarContra(){
   
+  var contrasena = document.getElementById("contra").value;
+ 
+ 
+  
+  if (contrasena.lenght() <  8)
+  alert("ingresa una contraseña minimo 8 caracteres")
+  else
+  alert("Se han ingresado los datos correctamente")
+
+}
+</script>
+
+
+    
+
+
+  
+
+
+
 
 
 
