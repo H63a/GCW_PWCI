@@ -19,7 +19,7 @@ $("#contra").keyup(function(){
     }
         else{
             $("#pass_status").addClass("text-danger");
-            $("#pass_status").text("Invalido");
+            $("#pass_status").text("Invalido.");
         }    
 
 
