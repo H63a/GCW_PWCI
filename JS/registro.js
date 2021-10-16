@@ -9,12 +9,14 @@ $("#contra").keyup(function(){
 
       
         if($(this).val().lenght >= 8 && $(this).val().lenght <=50){
-            $("#pass_status").text("Valido");
-            $("#pass_status").removeClass("text-danger");
-        }
-        else{
+           
             $("#pass_status").addClass("text-danger");
             $("#pass_status").text("Invalido");
+        }
+        else{
+            $("#pass_status").text("Valido");
+            $("#pass_status").removeClass("text-danger");
+            
         }
         
 
