@@ -70,6 +70,20 @@ BEGIN
 	vtitulo, vdiploma, vterminado, vprogreso, vforma_pago);
 END$$
 
+DELIMITER ;
 SELECT id_curso, nombre, descripcion, costo, imagen, comentarios, calificacion, categorias, titulo, diploma, terminado, progreso, forma_pago FROM Curso;
 
-CALL crearCurso('Ilustración basica');
+CALL crearCurso('');
+
+#procedure para el login---------------------------------------------------------------
+DELIMITER $$
+USE `bdm`$$
+CREATE PROCEDURE `sp_Login` (
+	IN pUsuario		VARCHAR(300),
+	IN pContra		VARCHAR(300)
+    )
+    BEGIN
+		SELECT  email,  contraseña , nombre, id_user
+		FROM usuario
+		WHERE email = pUsuario AND  contraseña  = pContra;
+END$$
